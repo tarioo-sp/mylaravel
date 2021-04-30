@@ -4,7 +4,7 @@
 
 ### Composer ###
 composer.phar
-/vendor/
+vendor/
 
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
@@ -239,22 +239,23 @@ $RECYCLE.BIN/
 !*_bk[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]*
 # End of Ignore Backup File, Except *_bk{YYYYMMDD}.*
 
-/.gitignore
-/.editorconfig
-
-!admin/**/vendor
-admin/vendor/
-
-!storage/logs/
-storage/logs/*
-
-storage/app/*
-!storage/app/files/
-!storage/app/settings/
-!storage/app/users/
-!storage/**/.gitignore
-
 voyager/
-admin/
+
+/*/.gitignore
+/*/.gitattributes
+/*/.editorconfig
+/*/README.md
+
+!/*/*/**/vendor/
+
+!/storage/logs/
+/storage/logs/*
+
+/storage/app/*
+!/storage/app/files/
+!/storage/app/settings/
+!/storage/app/users/
+!/storage/**/.gitignore
+
 
 *.session.sql
