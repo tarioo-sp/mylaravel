@@ -239,6 +239,9 @@ $RECYCLE.BIN/
 !*_bk[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]*
 # End of Ignore Backup File, Except *_bk{YYYYMMDD}.*
 
+/.gitignore
+/.editorconfig
+
 !admin/**/vendor
 admin/vendor/
 
@@ -251,3 +254,7 @@ storage/app/*
 !storage/app/users/
 !storage/**/.gitignore
 
+voyager/
+admin/
+
+*.session.sql
