@@ -8,8 +8,11 @@
     RewriteEngine On
 
     # Force the Redirect from HTTP to HTTPS. : If run on production server please Remove "#" on 2 line below
-    #RewriteCond %{HTTPS} off
-    #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # RewriteCond %{HTTPS} !on
+    # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    # <IfModule mod_headers.c>
+    #     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    # </IfModule>
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
