@@ -1,0 +1,18 @@
+:root {
+  --primary_color: rgb(166, 187, 5);
+  --secondary_color: rgb(29, 168, 99);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+icon {
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
